@@ -1,0 +1,79 @@
+{
+  "name": "a-stock-analysis",
+  "version": "1.0.0",
+  "description": "A股实时分析技能",
+  "permissions": ["bash"],
+  "entry_point": "src/main.py",
+  "actions": {
+    "get_quote": {
+      "description": "获取实时行情",
+      "parameters": {
+        "symbol": {
+          "type": "string",
+          "required": true,
+          "description": "股票代码，如 sh600000, sz000001, 600000"
+        }
+      }
+    },
+    "technical_analysis": {
+      "description": "技术分析",
+      "parameters": {
+        "symbol": {
+          "type": "string",
+          "required": true,
+          "description": "股票代码"
+        },
+        "indicator": {
+          "type": "string",
+          "required": false,
+          "description": "技术指标，如 macd,rsi,kdj,boll,ma"
+        }
+      }
+    },
+    "fundamental_analysis": {
+      "description": "基本面分析",
+      "parameters": {
+        "symbol": {
+          "type": "string",
+          "required": true,
+          "description": "股票代码"
+        }
+      }
+    },
+    "fund_flow": {
+      "description": "资金流向",
+      "parameters": {
+        "symbol": {
+          "type": "string",
+          "required": true,
+          "description": "股票代码"
+        },
+        "period": {
+          "type": "string",
+          "required": false,
+          "description": "时间段，如 5d,10d,20d"
+        }
+      }
+    },
+    "dragon_tiger_list": {
+      "description": "龙虎榜",
+      "parameters": {
+        "date": {
+          "type": "string",
+          "required": false,
+          "description": "日期，格式 YYYY-MM-DD"
+        }
+      }
+    },
+    "peer_comparison": {
+      "description": "同行对比",
+      "parameters": {
+        "symbol": {
+          "type": "string",
+          "required": true,
+          "description": "股票代码"
+        }
+      }
+    }
+  }
+}
