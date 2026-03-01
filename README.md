@@ -1,6 +1,6 @@
 # openclaw-stock-analyzer
 
-A股实时分析 Skill，为 Claude Code 提供专业的 A 股市场分析能力。
+A股实时分析 Skill，为 OpenClaw 提供专业的 A 股市场分析能力。
 
 ## 功能特性
 
@@ -89,14 +89,14 @@ A股实时分析 Skill，为 Claude Code 提供专业的 A 股市场分析能力
 
 ## 安装使用
 
-### 安装到 Claude Code
+### 安装到 OpenClaw
 
-1. 将 `a-stock-analysis.md` 文件复制到 Claude Code 的 skills 目录
-   - macOS: `~/Library/Application Support/Claude/skills/`
-   - Windows: `%APPDATA%\Claude\skills\`
-   - Linux: `~/.config/Claude/skills/`
+1. 将 `a-stock-analysis.md` 文件复制到 OpenClaw 的 skills 目录
+   - macOS: `~/Library/Application Support/OpenClaw/skills/`
+   - Windows: `%APPDATA%\OpenClaw\skills\`
+   - Linux: `~/.config/OpenClaw/skills/`
 
-2. 重启 Claude Code 或重新加载 skills
+2. 重启 OpenClaw 或重新加载 skills
 
 ### 使用示例
 
@@ -258,4 +258,4 @@ zhaokera
 
 - [新浪财经](https://finance.sina.com.cn/)
 - [东方财富](https://www.eastmoney.com/)
-- [Claude Code](https://claude.ai/)
+- [OpenClaw](https://github.com/openclaw)
